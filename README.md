@@ -59,8 +59,8 @@ This project demonstrates how **structured, automated pipelines** can streamline
 ## 🛠️ Installation
 1️⃣ **Clone the Repository**
 <pre>
-git clone https://github.com/ahmedmoussa/Projects-Portfolio.git
-cd 'AirflowTFX - Reproducible ML Pipeline Orchestration with TensorFlow Extended (TFX)'
+git clone https://github.com/ahmedmoussa/AirFlowTFX.git
+cd AirFlowTFX
 </pre>
 
 2️⃣ **Setup Airflow Environment**
