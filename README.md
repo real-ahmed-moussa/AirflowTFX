@@ -51,7 +51,7 @@ This project demonstrates how **structured, automated pipelines** can streamline
  ┣ 📜 base_pipeline.py
  ┣ 📜 module.py
  ┣ 📜 pipeline_run.py
- ┗ README.md
+ ┗ 📜 README.md
 </pre>
 
 ---
