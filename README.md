@@ -1,4 +1,4 @@
-# 📌 AirflowTFX: Reproducible ML Pipeline Orchestration with TensorFlow Extended (TFX)
+# AirflowTFX: Reproducible ML Pipeline Orchestration with TensorFlow Extended (TFX)
 
 <p align="center">
   <img src="imgs/AirflowTFX.png" alt="AirflowTFX" width="300">
@@ -6,6 +6,7 @@
 
 > End-to-end machine learning pipeline built with TFX and orchestrated via Apache Airflow, demonstrating automated, reproducible ML workflows using a real-world dataset.
 
+---
 
 ## 📖 Overview
  - This project implements a **TFX-based ML pipeline** for **medical insurance cost prediction**, orchestrated with Apache Airflow to enable automated and repeatable workflows.
@@ -13,10 +14,12 @@
  - The pipeline was developed in a **local Airflow environment** (non-containerized), focusing on **pipeline modularity and automation**.
  - Due to compatibility issues between Airflow and TFX installations, the TFX pipeline was created separately. A dedicated virtual environment was then invoked from within Airflow to execute the compiled pipeline file, as defined in the `TFX_Pipeline_DAG.py` script.
 
+---
 
 ## 🏢 Business Impact
 This project demonstrates how **structured, automated pipelines** can streamline model development, reduce manual intervention, and increase **traceability and reproducibility**—critical steps toward production-ready ML infrastructure in real-world scenarios.
 
+---
 
 ## 🚀 Features
 ✅ **End-to-End Workflow:** Covers data ingestion, schema validation, transformation, training, and evaluation in one orchestrated pipeline.  
@@ -24,6 +27,7 @@ This project demonstrates how **structured, automated pipelines** can streamline
 ✅ **Airflow Orchestration:** DAG-based execution, logging, and task dependency management for reproducible runs.  
 ✅ **TFX Ecosystem:** Leveraged TFDV, TFT, and TFMA for scalable, standardized ML operations.  
 
+---
 
 ## ⚙️ Tech Stack
 | Technology                  | Purpose                                           |
@@ -36,6 +40,7 @@ This project demonstrates how **structured, automated pipelines** can streamline
 | `TF Model Analysis (TFMA)`  | Post-training model evaluation                    |
 | `pandas`                    | Data manipulation and feature engineering         |
 
+---
 
 ## 📂 Project Structure
 <pre>
@@ -49,6 +54,7 @@ This project demonstrates how **structured, automated pipelines** can streamline
  ┗ README.md
 </pre>
 
+---
 
 ## 🛠️ Installation
 1️⃣ **Clone the Repository**
@@ -76,6 +82,7 @@ airflow webserver --port 8080                               # Run airflow webser
 airflow dags trigger tfx_pipeline_dag
 </pre>
 
+---
 
 ## 📂 Pipeline Runs
 ### Pipeline DAG (compiled TFX pipeline in Airflow UI)
@@ -90,11 +97,17 @@ airflow dags trigger tfx_pipeline_dag
 
   ![PPR Graph](imgs/ppln_succ_run.png)
 
+---
 
 ## 📊 Results
 - **Prediction Task:** Regression model for medical insurance cost prediction.
 - **Pipeline successfully automated** data ingestion, schema validation, transformation, training, and evaluation.
 - **Improved reproducibility and scalability** compared to manual, notebook-based workflows.
 
+---
+
 ## 📝 License
 This project is shared for portfolio purposes only and may not be used for commercial purposes without permission.
+
+This project is licensed under the **MIT License**.  
+© 2025 **Dr. Ahmed Moussa**
